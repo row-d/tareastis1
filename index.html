@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <style>
+    .card {
+      display: flex;
+      gap: 1rem;
+      padding: 0.3rem;
+      border: 2px #000 solid;
+      width: 600px;
+
+      & section {
+        flex: 1;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        margin-right: 1rem;
+      }
+
+      & img {
+        border-radius: 50%;
+        border: 1px #000 solid;
+        flex: 0;
+        aspect-ratio: 1/1;
+        object-fit: cover;
+        max-width: 20%;
+      }
+
+      & header {
+        display: flex;
+        justify-content: space-between;
+        align-items: baseline;
+      }
+
+      & header div {
+        display: inline-flex;
+        align-items: center;
+        gap: 1rem;
+        color: gray;
+
+        & button {
+          border: none;
+          background-color: inherit;
+        }
+      }
+
+      & footer {
+
+        & p {
+          text-overflow: ellipsis;
+        }
+
+      }
+    }
+  </style>
+</head>
+
+<body>
+  <article class="card">
+    <img src="https://cdn.prod.website-files.com/5e51c674258ffe10d286d30a/5e535c03c6b24912b82c061d_peep-89.svg"
+      alt="Jennifer Smith">
+    <section>
+      <header>
+        <b>Jennifer Smith</b>
+        <div>
+          <span>1 day</span>
+          <button>
+            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
+              class="bi bi-three-dots-vertical" viewBox="0 0 16 16">
+              <path
+                d="M9.5 13a1.5 1.5 0 1 1-3 0 1.5 1.5 0 0 1 3 0m0-5a1.5 1.5 0 1 1-3 0 1.5 1.5 0 0 1 3 0m0-5a1.5 1.5 0 1 1-3 0 1.5 1.5 0 0 1 3 0" />
+            </svg>
+          </button>
+        </div>
+      </header>
+      <footer>
+        <p>
+          Lorem, ipsum dolor sit amet consectetur adipisicing elit. Tempora ipsam, perferendis voluptas possimus
+          architecto natus quis asperiores quae molestiae repudiandae, nisi dolore. Vel soluta nam ipsam commodi cum.
+          Quasi, autem.
+        </p>
+      </footer>
+    </section>
+  </article>
+</body>
+
+</html>
