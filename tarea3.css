@@ -1,0 +1,48 @@
+.semaforo {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    background-color: rgb(35, 35, 35);
+    border-radius: 1rem;
+    gap: 1rem;
+    padding: 1rem;
+    width: 200px;
+    height: 600px;
+    margin: 0 auto;
+
+    &>* {
+        border-radius: 50%;
+        flex: 1;
+        opacity: 0.3;
+        box-shadow: 0 -0.5rem 0 black;
+        aspect-ratio: 1;
+        /* transition: all 1s ease-in-out; */
+    }
+
+    & :nth-child(1) {
+        background-color: rgb(255, 0, 0);
+    }
+
+    & :nth-child(2) {
+        background-color: rgb(255, 255, 0);
+    }
+
+    & :nth-child(3) {
+        background-color: rgb(0, 255, 0);
+    }
+}
+
+button {
+    margin: 0 auto;
+    display: block;
+    margin-top: 1rem;
+    padding: 1rem;
+    border: none;
+    border-radius: 12px;
+    background-color: black;
+    color: rgb(255, 0, 0);
+    font-size: 1rem;
+    cursor: pointer;
+    outline: 1px rgb(35, 35, 35) solid;
+
+}
